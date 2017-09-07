@@ -37,8 +37,15 @@ response.say(news+" Do you want to hear one more article ?").shouldEndSession( f
 app.intent('YesIntent',function(request,response) {
 
 var article=require('./cricketupdates')();
+//random
+var min=2;
+var max = 10;
 
-var news = article.articles[0].title;
+var num = function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var news = article.articles[num].title;
 response.say(news+ " Do you want to hear one more article ?").shouldEndSession( false );
 }
 
