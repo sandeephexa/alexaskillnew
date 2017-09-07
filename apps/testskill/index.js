@@ -2,11 +2,11 @@ module.change_code = 1;
 'use strict';
 
 var alexa = require( 'alexa-app' );
-var app = new alexa.app( 'test-skill' );
+var app = new alexa.app( 'my-skill' );
 
 
 app.launch( function( request, response ) {
-	response.say( 'Welcome to your alexa skill' ).reprompt( 'Way to go. ' ).shouldEndSession( false );
+	response.say( 'Welcome to my skill' ).reprompt( 'Way to go. ' ).shouldEndSession( false );
 } );
 
 
