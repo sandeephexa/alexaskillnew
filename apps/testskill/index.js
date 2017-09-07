@@ -6,7 +6,7 @@ var app = new alexa.app( 'test-skill' );
 
 
 app.launch( function( request, response ) {
-	response.say( 'Welcome to your alexa skill' ).reprompt( 'Way to go. You got it to run. Bad ass.' ).shouldEndSession( false );
+	response.say( 'Welcome to your alexa skill' ).reprompt( 'Way to go. ' ).shouldEndSession( false );
 } );
 
 
@@ -17,14 +17,7 @@ app.error = function( exception, request, response ) {
 	response.say( 'Sorry an error occured ' + error.message);
 };
 app.intent('GetNewWelcomeIntent',
-//   {
-//     "slots":{"number":"NUMBER"}
-// 	,"utterances":[ 
-// 		"say the number {1-100|number}",
-// 		"give me the number {1-100|number}",
-// 		"tell me the number {1-100|number}",
-// 		"I want to hear you say the number {1-100|number}"]
-//   },
+
   function(request,response) {
     //var number = request.slot('number');
     response.say("Hello sandeep ! How may i help you ? ");
