@@ -2,7 +2,7 @@ module.change_code = 1;
 'use strict';
 
 var alexa = require( 'alexa-app' );
-var app = new alexa.app( 'WelcomeSkill' );
+var app = new alexa.app( 'test-skill' );
 
 
 app.launch( function( request, response ) {
@@ -17,11 +17,6 @@ app.error = function( exception, request, response ) {
 	response.say( 'Sorry an error occured ' + error.message);
 };
 
-app.intent('GetNewWelcomeIntent',
-  function(request,response) {
-    response.say("Hi Sandeep Good Morning ");
-  }
-);
 app.intent('sayNumber',
   {
     "slots":{"number":"NUMBER"}
