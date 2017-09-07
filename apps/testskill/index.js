@@ -29,11 +29,29 @@ app.intent('GetCricketUpdates',function(request,response) {
  var article=require('./cricketupdates')();
 
 var news = article.articles[0].title;
-response.say(news+"Do you want more news updates ?").shouldEndSession( false );
+response.say(news+" Do you want to hear one more article ?").shouldEndSession( false );
+}
 
-	
-  }
 );
+//
+app.intent('YesIntent',function(request,response) {
+
+var article=require('./cricketupdates')();
+
+var news = article.articles[0].title;
+response.say(news+ " Do you want to hear one more article ?").shouldEndSession( false );
+}
+
+);
+
+// thank you
+app.intent('ThankYou',function(request,response) {
+
+response.say("Thank you ! Have a good day").shouldEndSession( true );
+}
+
+);
+
 
 app.intent('sayNumber',
   {
