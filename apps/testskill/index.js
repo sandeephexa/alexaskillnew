@@ -26,9 +26,9 @@ app.intent('GetNewWelcomeIntent',
 // news intent
 app.intent('GetCricketUpdates',function(request,response) {
     
- var horoscope=require('./cricketupdate')();
+ var article=require('./cricketupdate')();
 
-var news = articles[0].title;
+var news = article.articles[0].title;
 response.say("first article"+news).shouldEndSession( false );
 
 	
