@@ -1,0 +1,3 @@
+[submodule "apps/testskill"]
+	path = apps/testskill
+	url = https://github.com/sandeephexa/testskill.git
