@@ -29,7 +29,7 @@ app.intent('GetCricketUpdates',function(request,response) {
  var article=require('./cricketupdates')();
 
 var news = article.articles[0].title;
-response.say(news+" " + " Do you want to hear one more article ?").shouldEndSession( false );
+response.say(news+"." + " Do you want to hear one more article ?").shouldEndSession( false );
 }
 
 );
@@ -49,7 +49,7 @@ var num = Math.floor(Math.random() * 6) + 1 ;
 
 
 var news = article.articles[num].title;
-response.say(news+ " " + " Do you want to hear one more article ?").shouldEndSession( false );
+response.say(news+ "." + " Do you want to hear one more article ?").shouldEndSession( false );
 }
 
 );
