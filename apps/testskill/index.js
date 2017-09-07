@@ -17,6 +17,11 @@ app.error = function( exception, request, response ) {
 	response.say( 'Sorry an error occured ' + error.message);
 };
 
+app.intent('GetNewWelcomeIntent',
+  function(request,response) {
+    response.say("Hi Sandeep Good Morning ");
+  }
+);
 app.intent('sayNumber',
   {
     "slots":{"number":"NUMBER"}
