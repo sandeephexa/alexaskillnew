@@ -23,6 +23,18 @@ app.intent('GetNewWelcomeIntent',
     response.say("Hello sandeep ! How may i help you ? ");
   }
 );
+// news intent
+app.intent('GetCricketUpdates',function(request,response) {
+    
+ var horoscope=require('./cricketupdate')();
+
+var news = articles[0].title;
+response.say("first article"+news).shouldEndSession( false );
+
+	
+  }
+);
+
 app.intent('sayNumber',
   {
     "slots":{"number":"NUMBER"}
