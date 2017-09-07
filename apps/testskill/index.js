@@ -41,9 +41,7 @@ var article=require('./cricketupdates')();
 var min=2;
 var max = 10;
 
-var num =function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
+var num = Math.floor(Math.random() * 6) + 1 ;
 // var num = function getRandomInt(min, max) {
 //   return Math.floor(Math.random() * (max - min + 1)) + min;
 // }
