@@ -29,7 +29,7 @@ app.intent('GetCricketUpdates',function(request,response) {
  var article=require('./cricketupdates')();
 
 var news = article.articles[0].title;
-response.say("first article"+news).shouldEndSession( false );
+response.say(news+"Do you want more news updates ?").shouldEndSession( false );
 
 	
   }
