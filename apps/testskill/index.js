@@ -26,7 +26,7 @@ app.intent('GetNewWelcomeIntent',
 // news intent
 app.intent('GetCricketUpdates',function(request,response) {
     
- var article=require('./cricketupdate')();
+ var article=require('./cricketupdates')();
 
 var news = article.articles[0].title;
 response.say("first article"+news).shouldEndSession( false );
