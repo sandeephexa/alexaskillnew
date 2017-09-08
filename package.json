@@ -10,8 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "alexa-app-server": "^3.0.1",
-    "request-sync": "^1.0.0",
-    "request-promise": "^4.2.1"
+    "request-sync": "^1.0.0"
+   
 
   },
   "devDependencies": {},
