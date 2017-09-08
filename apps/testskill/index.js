@@ -6,7 +6,7 @@ var app = new alexa.app( 'test-skill' );
 
 
 app.launch( function( request, response ) {
-	response.say( 'Welcome to news skill' ).reprompt( 'Way to go. ' ).shouldEndSession( false );
+	response.say( 'Welcome to daily news updates' ).reprompt( 'Way to go. ' ).shouldEndSession( false );
 } );
 
 
