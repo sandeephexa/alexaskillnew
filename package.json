@@ -1,16 +1,27 @@
 {
   "name": "alexaskill",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "sandeep",
   "license": "ISC",
   "dependencies": {
     "alexa-app-server": "^3.0.1",
-    "request-sync": "^1.0.0"
-  }
+    "request-sync": "^1.0.0",
+    "request-promise": "^4.2.1"
+
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeephexa/alexaskillnew.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sandeephexa/alexaskillnew/issues"
+  },
+  "homepage": "https://github.com/sandeephexa/alexaskillnew#readme",
+  "description": ""
 }
